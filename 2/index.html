@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <form id="main_form">
+        <fieldset>
+            <legend>Size</legend>
+    
+            <label>
+                <input type="radio" value="S" name="size">
+                S
+            </label>
+            
+            <label>
+                <input type="radio" value="M" name="size">
+                M
+            </label>
+    
+            <label>
+                <input type="radio" value="L" name="size">
+                L
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+
+            <label>
+                <input type="checkbox" name="color" value="1">
+                1
+            </label>
+
+            <label>
+                <input type="checkbox" name="color" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="checkbox" name="color" value="3">
+                3
+            </label>
+
+            <label>
+                <input type="checkbox" name="color" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="checkbox" name="color" value="5">
+                5
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Manufacturer</legend>
+
+            <select name="manufacturer" multiple>
+                <option value="aaa">aaa</option>
+                <option value="b&c">b&c</option>
+                <option value="ddd">ddd</option>
+                <option value="eee">eee</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sale</legend>
+
+            <label>
+                <input type="checkbox" name="sale" value="1">
+                Распродажа
+            </label>
+        </fieldset>
+    </form>
+
+    <p>Check Console</p>
+
+    <script src="./main.js"></script>
+</body>
+</html>

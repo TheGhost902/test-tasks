@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="name" id="name_input" value="Xxxx">
+
+    <script>
+        const input = document.getElementById('name_input')
+        const initValue = input.value
+
+        input.addEventListener('input', e => {
+            const { value } = e.target
+
+            if (value !== initValue) {
+                input.classList.add('red')
+            } else {
+                input.classList.remove('red')
+            }
+        })
+    </script>
+</body>
+</html>
