@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <iframe id="frame" src="http://localhost:3002"></iframe>
+
+    <script type="module">
+        import { FrameStorage } from './main.js'
+
+        function callback(data) {
+            console.log('From callback, status: ' + data.status, data)
+        }
+
+        window.addEventListener('load', () => {
+            const frame = document.getElementById('frame')
+            const frameStorage = new FrameStorage(frame)
+            
+            frameStorage.write(callback, 'lol', '101')
+            frameStorage.read(callback, 'lol')
+            frameStorage.delete(null, 'lol')
+            frameStorage.read(callback, 'lol')
+        })
+    </script>
+</body>
+</html>

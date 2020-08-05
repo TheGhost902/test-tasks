@@ -15,12 +15,11 @@
 
     <script>
         const input = document.getElementById('name_input')
-        const initValue = input.value
 
         input.addEventListener('input', e => {
             const { value } = e.target
 
-            if (value !== initValue) {
+            if (value !== input.defaultValue) {
                 input.classList.add('red')
             } else {
                 input.classList.remove('red')

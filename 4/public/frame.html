@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt reiciendis inventore aspernatur vel at voluptatibus qui quo vero delectus? Aliquam, earum atque. Quis nulla ad libero obcaecati odit, inventore ratione. Cupiditate quo voluptas labore eligendi hic ducimus ex aut aperiam velit officiis, architecto eaque. Iusto sunt molestiae alias molestias doloribus.</p>
+
+    <script type="module">
+        import { localStorageHandler } from './main.js'
+
+        window.onmessage = function(e){
+            localStorageHandler(e.data)
+        };
+    </script>
+</body>
+</html>
