@@ -1,0 +1,22 @@
+.new-employee-form {
+    margin: 20px;
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px 10px;
+
+        background-color: #fff;
+        box-shadow: 0 0 5px #999;
+        
+        p {
+            margin: 10px 0;
+        }
+
+        input {
+            margin-bottom: 10px;
+        }
+    }
+}

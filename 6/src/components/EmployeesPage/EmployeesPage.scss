@@ -1,0 +1,16 @@
+.employees-page {
+    padding: 0 10px;
+
+    &__loading {
+        padding: 20px;
+        margin: 0 auto;
+        display: block;
+        max-width: 150px;
+
+        background-color: #fff;
+        box-shadow: 0 0 2px #aaa;
+
+        text-align: center;
+        font-size: 1.5rem;
+    }
+}
